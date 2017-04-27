@@ -40,5 +40,6 @@ class Dojo(object)
             return True
 
     def add_person(self, first_name, sur_name, person_type, need_livingspace):
-        
+        if len(self.list_of_)
+
 

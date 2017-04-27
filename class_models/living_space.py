@@ -1,16 +1,20 @@
-class LivingSpace():
+from room import Room
+
+
+class LivingSpace(Room):
     """A Living space under Rooms"""
 
-    def __init__(self):
-        # self.living_space == len(__init__ self.living_space)
-        self.living_space_capacity = 4
-        self.living_space_name = {}
+        list_of _living_space = []
 
-    def add_living_space(self, living_space_name):
-        self.living_space = len(self.living_space) + 1
+    def __init__(self, room_name):
+        super().__init__(room_name)
+        self.room_capacity = 4
+
+    def add_living_space(self, living_space_name, living_space_capacity):
         self.living_space_name = living_space_name
+        self.living_space_capacity = living_space_capacity
 
         if self.living_space_capacity > 3:
             return "Living space has reached full capacity"
         else:
-            return (living_space_name, "Living space has been created")
+            return living_space_name, "Living space has been created"

@@ -1,11 +1,12 @@
-# from staff import Staff
-# from person import Staff
+from person import Person
 
-class Staff():
+
+class Staff(Person):
     """A Staff exists under Person"""
 
-    def __init__(self):
-    	self.Staff = Staff
-    	self.staff_name = {}
+    list_of_staff = []
 
-    
+    def __init__(self, staff_name, accomodation):
+        self.staff_name = staff_name
+        self.accomodation = False
+

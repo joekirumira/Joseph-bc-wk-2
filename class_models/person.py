@@ -1,24 +1,18 @@
-# from person import Person
-# from dojo import add_person
-from staff import Staff
-from fellow import Fellow
+class Person(subject):
+    """A Person exists under Dojo"""
 
-class Person():
-	"""A Person exists under Dojo"""
-	def person_type(self):
-		self.person_type = person_type
-		if person_type == Staff:
-			return (staff_name, "Staff")
+    list_of_people = []
 
-		elif person_type == Fellow:
-			return (fello_name, "fellow")
+    def __init__(self, person_type):
+        self.person_type = person_type
 
-		else:
-			return "Error"
+    def person_type(self):
 
+        if person_type == Staff:
+            return staff_name, "staff"
 
+        elif person_type == Fellow:
+            return fello_name, "fellow"
 
-
-
-
-    
+        else:
+            return "Error passing person"
