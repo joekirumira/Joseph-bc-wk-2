@@ -8,7 +8,7 @@ class Office(Room):
         # self.Office = len(__init__ self.Office)
         super().__init__(room_name, room_type)
         self.office_capacity = 6
-        self.office_name = {}
+        self.office_name = []
 
     def add_office(self, office_name):
         # self.add_office == len(__init__ self.Office) +1

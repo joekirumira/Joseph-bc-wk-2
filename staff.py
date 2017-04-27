@@ -6,5 +6,5 @@ class Staff(Person):
 
     def __init__(self):
         self.Staff = Staff
-        self.staff_name = {}
+        self.staff_name = []
 

@@ -8,7 +8,7 @@ class LivingSpace(Room):
         # self.living_space == len(__init__ self.living_space)
         self.living_space = len(self.living_space) + 1
         self.living_space_capacity = 4
-        self.living_space_name = {}
+        self.living_space_name = []
 
     def add_living_space(self, living_space_name):
         self.living_space_name = living_space_name

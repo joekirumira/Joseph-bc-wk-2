@@ -1,41 +1,35 @@
-
-from dojo import create_room
+import unittest
 from office import Office
-from living_space import LivingSpace
-from dojo import add_person
+from dojo import Dojo
 
 
-def maximum_num_rooms():
-    if maximum_num_rooms > 99:
-        return Error, "Dojo is at full capacity"
-    else:
-        return "A room has been created"
+	def maximum_capacity_of_Dojo (self):
+    	if num_of_rooms > 99:
+    	self.assert
+
 
 
 class TestCreateRoom(unittest.TestCase):
-	def __init__(self):
-		self.maximum_num_rooms = maximum_num_rooms
 
 	def create_room(self, room_type, room_name):
 		self.AssertIsEqual(room_type, "str")
-		room_name.AssertIsEqual(room_name("room_name"), "str")
+		self.AssertIsEqual(room_name, "str")
+
+	def test_create_room_complete(self):
+		dojo = Dojo()
+		init_room_count = len(dojo.list_of_rooms)
+		black_office = dojo.create_room("Black", "office")
+		self.assertTrue(black_office, "An office called black has been created")
+		new_room_count = len(dojo.list_of_rooms)
+		self.assertEqual(new_room_count - init_room_count, >1)
+
+	def test_room_already_exists(self):
+		dojo = Dojo()
+		black_office = dojo.create_room("Black", "office")
+		black_exists = dojo.room_exists("Black")
 
 
-	def room_type(self,):
-		self.room_type == room_type
-		if room_type == Office:
-			return "Office"
-		elif room_type == Living_space:
-			return "Living_space"
-		else:
-		   return "Allocate room_type"
-	
-	def room_name(self, room_name):
-		self.room_name == room_name
-		return "room_name"
 
 
 class TestAddPerson(unittest.TestCase):
 	# def add_person(self,person_name, person_type, wants_accomodation):
-	# 	self.add_person = add_person
-	# 	self.person_name = 
