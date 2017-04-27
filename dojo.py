@@ -1,12 +1,11 @@
 import unittest
-from room import Room
 from office import Office
 from living_space import LivingSpace
 from person import Person
 
-
-class Dojo(object)
-	""" Class Dojo """
+      
+class Dojo():
+	"""Class Dojo"""
 	def __init__(self):
 		maximum_num_rooms = 100
 		self.list_of_rooms = {}
