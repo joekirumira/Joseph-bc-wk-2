@@ -17,11 +17,11 @@ class TestCreateRoom(unittest.TestCase):
 
 	def test_create_room_complete(self):
 		dojo = Dojo()
-		init_room_count = len(dojo.list_of_rooms)
+		initial_room_count = len(dojo.list_of_rooms)
 		black_office = dojo.create_room("Black", "office")
 		self.assertTrue(black_office, "An office called black has been created")
 		new_room_count = len(dojo.list_of_rooms)
-		self.assertEqual(new_room_count - init_room_count, >1)
+		self.assertEqual(new_room_count - initial_room_count, >1)
 
 	def test_room_already_exists(self):
 		dojo = Dojo()
